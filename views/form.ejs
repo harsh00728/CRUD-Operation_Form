@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+    <h1>Personal Details Form</h1>
+    <br> <br>
+
+    <form method="post" action="/home/post">
+        <div class="Personal">
+            <h3>ABOUT :-</h3>
+            <input type="text" name="firstname" placeholder="First Name">
+            <input type="text" name="middlename" placeholder="Middle Name">
+            <input type="text" name="lastname" placeholder="Last Name">
+            <input type="text" name="gender" placeholder="Gender">
+        </div>
+    
+        <div class="Address">
+            <h3>ADDRESS :-</h3>
+            <input type="text" name="locality" placeholder="Locality / Area / Street">        
+            <input type="text" name="city" placeholder="City">
+            <input type="text" name="state" placeholder="State">                        
+            <input type="number" name="pincode" placeholder="PIN">                        
+        </div>
+    
+        <div class="Contact">
+            <h3>CONTACTS :-</h3>
+            <input type="number" name="phone1" placeholder="Phone">    
+            <input type="number" name="phone2" placeholder="Alternate Phone">    
+            <input type="text" name="email" placeholder="Email">    
+        </div>
+
+        <div class="Password">
+            <h3>SET NEW PASSWORD :-</h3>
+            <input type="text" name="password" placeholder="Password">
+        </div>
+        
+        <br> <br>
+        <button> Submit </button>
+    </form>
+</body>
+</html>

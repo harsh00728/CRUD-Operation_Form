@@ -1,0 +1,50 @@
+h1{
+    text-align: center;
+    font-size: 50px;
+    color: #A34343;
+}
+
+.contact{
+    background-color: #FBF8DD;
+}
+
+h3{
+    font-size: 20px;
+    font-weight: 400;
+    color: #A34343;
+    margin-left: 20px;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    margin-left: 20px;
+}
+
+button{
+    margin-top: 20px; 
+    margin-left: 15px;
+    border-radius: 30px;
+    border: none;
+    font-size: 20px;
+    font-family: poppins;
+    font-weight: 500;
+    background-color: #FBF8DD;
+}
+
+.btn{
+    border: 2px solid black;
+    border-radius: 30px;
+    width: 75px;
+    height: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 20px;
+}
+
+.anchor{
+    margin-left: 0;
+}
+

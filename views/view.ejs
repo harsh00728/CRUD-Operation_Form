@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>View Details</title>
+</head>
+<body>
+    <h2><%= member.firstname %> <%= member.middlename%> <%= member.lastname%></h2>
+    <div class="contact">
+        <p>Gender: <%= member.gender%></p>
+        <p>Address: <%= member.locality %></p>
+        <p>City: <%= member.city %></p>
+        <p>State: <%= member.state %></p>
+        <p>Pin Code: <%= member.pinCode %></p>
+        <p>Mobile: <%= member.phone1 %></p>
+        <p>Alt Number: <%= member.phone2 %></p>
+        <p>Email: <%= member.email %></p>
+    </div>
+</body>
+</html>

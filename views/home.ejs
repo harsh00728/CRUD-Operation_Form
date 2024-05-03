@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Find Your LoveOne...</h1>
+    <% for(member of members) { %>
+        <div class="contact">
+            <h3> Name: <%= member.firstname %> <%= member.middlename%> <%= member.lastname%> </h3>
+            <h3> Phone: <%= member.phone1 %> </h3>
+
+            <a href="http://localhost:8080/home/view/<%= member.id%>">View</a>
+            &nbsp; &nbsp; &nbsp;
+            <a href="http://localhost:8080/home/form/<%= member.id%>">Edit</a>
+            
+            <form method="post" action="/home/delete/<%= member.id%>?_method=DELETE">
+                <button>Delete Post</button>
+            </form> 
+        </div>
+    <% } %>    
+
+    <br> <br>
+    <div class="btn">
+        <a class="anchor" href="/home/form"> + Add</a>
+    </div>
+</body>
+</html>
